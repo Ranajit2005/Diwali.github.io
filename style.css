@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+.container{
+    display: grid;
+    place-items: center;
+    height: 70vh;
+    margin-top: 100px;
+}
+.diya{
+    background-color: #f5950e;
+    height: 150px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 0 0 150px 150px;
+}
+.flame{
+    width: 300px;
+    height: 60px;
+    background-color: red;
+    margin-bottom: -243px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.flame1{
+    height: 170px;
+    width: 170px;
+    background-color: rgb(255, 232, 26);
+    border-radius: 160px 0;
+    transform: rotate(-45deg);
+    margin-top: -150px;
+    margin-left: 60px;
+    opacity: 0.8;
+    box-shadow: 0 0 5px #ffffff,0 0 10px #ffffff,0 0 15px #ffff00,0 0 20px #fff306,0 0 25px #f6ff47,0 0 30px #e3eb71;
+}
+.flame2{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 110px 0;
+    position: absolute;
+    /* transform: rotate(-45deg); */
+    margin-top: 50px;
+    /* margin-bottom: -100px; */
+    /* margin-left: -20px; */
+    overflow: hidden;
+    box-shadow:0 0 5px #ff1313,0 0 10px #e10d0d,0 0 15px #ff9900,0 0 20px #f5b000,0 0 25px #f58700,0 0 30px #ff7b00;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #00ac0b;
+}
+
+.text h1:hover{
+    text-shadow: 0 0 5px #ffffff,0 0 10px #ffffff,0 0 15px #00ff11,0 0 20px #29f500,0 0 25px #25f500,0 0 30px #48ff00;;
+}
+/* .flame1:hover{
+    
+}
+.flame2:hover{
+    
+} */
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */ */
+.container1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubble{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bubble span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 
+    0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: rd 15s linear infinite;
+    animation-duration: calc(10s / var(--i));
+}
+.bubble span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 
+    0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes rd{
+    0%{
+        transform: translateY(100vh) scale(0.1);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.r{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media  (max-width:640px){
+    #box1,#box2,#box3,#box4,#box5,
+    #box20,#box19,#box18,#box17,#box16{
+        display: none;
+    }
+}
