@@ -56,11 +56,17 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #00ac0b;
+    color: #0d00ff;
 }
 
-.text h1:hover{
+.text:hover{
     text-shadow: 0 0 5px #ffffff,0 0 10px #ffffff,0 0 15px #00ff11,0 0 20px #29f500,0 0 25px #25f500,0 0 30px #48ff00;;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 /* .flame1:hover{
     
